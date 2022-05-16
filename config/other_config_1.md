@@ -208,7 +208,16 @@ $ pip install npm
 + 安装插件
 ```
 $ jupyter labextension install @jupyterlab/toc
+$ jupyter labextension install jupyterlab-drawio
 ```
++ 快捷方式设置
+  1.首先打开jupyter notebook快捷方式的文件位置
+  2.然后复制一个jupyter notebook快捷方式的副本
+  3.右键查看副本的属性，将目标框中的notebook替换为lab
+  4.点击确定，并将副本的文件名修改为Jupyter Lab
+  5.cmd中输入jupyter noterbook --generate-config
+  6../jupyter/config.py-->c.NotebookApp.notebook_dir
+  7.修改快捷方式属性-->删除USERPROFILE,起始位置改为目标路径
 
 
 # ibus

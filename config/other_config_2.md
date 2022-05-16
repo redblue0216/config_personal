@@ -22,8 +22,10 @@ $ ss -nlt | grep 5432
 ```
 $ wget https://dl.min.io/server/minio/release/linux-amd64/minio
 $ chmod +x minio
+$ cp minio /usr/bin
 $ wget https://dl.min.io/client/mc/release/linux-amd64/mc
 $ chmod +x mc
+$ cp mc /usr/bin
 $ ./minio server /data
 $ ./mc --help
 ```

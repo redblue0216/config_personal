@@ -27,7 +27,16 @@ $sudo apt-get install sublime-text
 $bash Anaconda******************************.sh
 $sudo gedit ~/.bashrc
 ->export PATH******************************** # 配置python环境变量
+$source ~/.bashrc
 $conda config --set auto_activate_base false # 去除base
+```
+
+```
+windows
+anaconda\
+anaconda\Library\bin
+anaconda\Library\mingw-64\bin
+anaconda\Scripts
 ```
 # **6.C&C++&fortran**
 ```
@@ -113,6 +122,7 @@ $ sudo dpkg -i code.******************.deb
 + 用code打开文件夹
 + 安装扩展c/c++
 + 新建.c文件
++ 安装coder runner插件（直接运行）
 + 按F5Debug，出现命令框框，选择c/c++ GDB，接着选择gcc-7，产生launch.json
 + 继续Debug，选择GDB和gcc-7，产生tasks.json
 + 继续Debug,成功！
@@ -266,6 +276,7 @@ $cd /etc/mysql
 $cat debian.cnf
 $# 登陆数据库
 $mysql -uxxxx -pxxxxx
+$passwd----f3kmo2e1ZmYxyJLw139.224.31.167
 $# 创建airflow数据库
 $mysql>create database airflow;
 $mysql>create user 'airflow'@'%' identified by '';
@@ -313,6 +324,17 @@ $airflow webserver -p 8080
 $airflow scheduler
 $pip install flower
 $airflow flower
+$### airflow2.1.3
+$airflow db init 
+$airflow users create \
+    --username admin \
+    --firstname Peter \
+    --lastname Parker \
+    --role Admin \
+    --email spiderman@superhero.org \
+    --password amdin
+$airflow webserver --port 8080
+$airflow scheduler
 ```
 在worker上挂载
 ```

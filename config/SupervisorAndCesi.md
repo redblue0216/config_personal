@@ -189,7 +189,7 @@ serverurl=unix:///tmp/supervisor.sock ; use a unix:// URL  for a unix socket
 files = /home/shihua/Config/supervisor/*.conf
 ```
 **systemd管理开机自启**
-新建supervisord.service
+新建supervisord.service 路径：/usr/lib/systemd/system
 ```
 [Unit]
 Description=Supervisor Service
@@ -214,6 +214,7 @@ $sudo systemctl is-enabled supervisord.service
 + 使用
 在指定文件夹下配置子进程，配置好后使用systemd重启supervisord服务即可生效，默认前端为9001端口。
 **dask_scheduler.conf示例**
++ superset run -p 5001 -h 0.0.0.0 --with-threads --reload --debugger
 ```
 [program:dask_scheduler]
 directory=/home/shihua/
@@ -285,7 +286,6 @@ host = "127.0.0.1"
 port = "9001"
 
 ```
-
 
 
 
