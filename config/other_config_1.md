@@ -207,8 +207,8 @@ $ pip install npm
 ```
 + 安装插件
 ```
-$ jupyter labextension install @jupyterlab/toc
-$ jupyter labextension install jupyterlab-drawio
+$ jupyter labextension install @jupyterlab/toc ### 新版本不用安装toc
+$ jupyter labextension install jupyterlab-drawio ### 插件中点击安装，时间较长请耐心等待
 ```
 + 快捷方式设置
   1.首先打开jupyter notebook快捷方式的文件位置

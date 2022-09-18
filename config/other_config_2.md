@@ -31,9 +31,9 @@ $ ./mc --help
 ```
 # Ray
 ```
-$ pip install ray
-$ ray start --head --port=6379 --dashboard-host=0.0.0.0
-$ ray start --address='xx.xx.xxx.xxx' --redis-password='xxxxxxxxx'
+$ pip install ray[default] ### default才会全部安装模块
+$ ray start --head --port=6379 --dashboard-host=0.0.0.0 --dashboard-port=8265
+$ ray start --address='xx.xx.xxx.xxx' 
 $# head
 $ python:ray.init('auto',_redis-password=xx)
 $# web ui port is 8265

@@ -135,6 +135,7 @@ $ sudo dpkg -i code.******************.deb
 $sudo dpkg -l code
 $sudo dpkg -r code
 ```
++ vscode同步插件---setting sync
 # **Consul**
 + 设置consul为环境变量
 ```
